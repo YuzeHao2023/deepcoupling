@@ -37,13 +37,13 @@ The dataset consists of 158 single-crystal perovskite materials. Feature selecti
 7.  **$K_B$** (Bulk Modulus)
 8.  **$R_a-B$** (Atomic Radii)
 
-![figure1](docs/images/figure1.png)
+![figure1](image/figure1.png)
 *Figure 1: Heatmap of Pearson correlation analysis for feature selection.*
 
 ## Model Architecture
 The model utilizes a **10-layer ResNet** backbone enhanced with a **Multi-head Attention** layer to capture complex inter-dependencies between the input descriptors.
 
-![figure2](docs/images/figure2.png)
+![figure2](image/figure2.png)
 *Figure 2: Schematic of the Multi-head-Attention enhanced ResNet architecture.*
 
 ## Results and Performance
@@ -57,7 +57,7 @@ Our model demonstrates superior stability and predictive power compared to tradi
 | K-means | 0.583 | 0.031 |
 | PCA | 0.439 | -0.10 |
 
-![figure3](docs/images/figure3.png)
+![figure3](image/figure3.png)
 *Figure 3: Predicted vs. Actual bandgap values for the test set.*
 
 ## Installation
