@@ -1,8 +1,28 @@
-# Accelerated Photocatalytic C-C Coupling via Interpretable Deep Learning
+![](asserts/logo.png)
+  
+  <h1 align="center">Accelerated Photocatalytic C-C Coupling via Interpretable Deep Learning: Single-Crystal Perovskite Catalyst Design Using First-Principles Calculations</h1>
 
-This repository contains the official implementation of the paper: **"ACCELERATED PHOTOCATALYTIC C-C COUPLING VIA INTERPRETABLE DEEP LEARNING: SINGLE-CRYSTAL PEROVSKITE CATALYST DESIGN USING FIRST-PRINCIPLES CALCULATIONS"**.
+  <p align="center">Yuze Hao, Lan Duo</p>
 
----
+  <p align="center">College of Chemistry and Chemical Engineering, Inner Mongolia University, Hohhot 010021, China.</p>
+
+  <p align="center">Photocatalytic C–C coupling reactions have garnered significant attention for their
+potential to drive sustainable chemical transformations. The design of efficient
+photocatalysts is critical in optimizing these reactions. In this study, we use a
+computational materials science approach, leveraging first-principles calculations
+to evaluate the bandgap values of 158 single-crystal perovskite materials. We
+employ a deep learning model, incorporating a multi-head-attention mechanism
+within a ResNet architecture, to predict the bandgap based on features such as
+τ , Group-A, Group-B, Pettifor number, χM-B, χP-B, Ea-A, cB, KB, and Ra-B.
+This model’s performance is compared to traditional machine learning techniques,
+including K-means, MLP, Random Forest, PCA, and Multivariable Linear Regression. The results demonstrate that the self-attention ResNet model achieves a
+training R2 of 0.819 and a test R2 of 0.803, indicating strong predictive accuracy.
+The model’s interpretability is enhanced by visualizing the permutation importance of each feature, shedding light on the contributions of various factors to the
+prediction. These findings highlight the potential of machine learning, particularly deep learning, in accelerating the design of photocatalysts for C–C coupling
+reactions.</p>
+  <p align="center"></p>
+
+![](https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif)
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -38,12 +58,14 @@ The dataset consists of 158 single-crystal perovskite materials. Feature selecti
 8.  **$R_a-B$** (Atomic Radii)
 
 ![figure1](image/figure1.png)
+
 *Figure 1: Heatmap of Pearson correlation analysis for feature selection.*
 
 ## Model Architecture
 The model utilizes a **10-layer ResNet** backbone enhanced with a **Multi-head Attention** layer to capture complex inter-dependencies between the input descriptors.
 
 ![figure2](image/figure2.png)
+
 *Figure 2: Schematic of the Multi-head-Attention enhanced ResNet architecture.*
 
 ## Results and Performance
@@ -58,6 +80,7 @@ Our model demonstrates superior stability and predictive power compared to tradi
 | PCA | 0.439 | -0.10 |
 
 ![figure3](image/figure3.png)
+
 *Figure 3: Predicted vs. Actual bandgap values for the test set.*
 
 ## Installation
